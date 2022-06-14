@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+   background-color: #191919; 
+  /*  background-color:rgba(0,100,146,.1); */
+    padding: 1rem;
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*propiedad para dejar fija la cebecera si hacemos scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/*Aplico un min 100vh para poder realizar un scroll y ver el navbar fijo */
+.container {
+    height: 100vh;
+    width: 100%;
+    /* padding: 2rem; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.img-seccion {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo {
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 0 0 14px;
+}
+
+.nav-menu-lista {
+    list-style: none;
+    padding: 1.2rem;
+}
+
+.nav-menu-item {
+    /*utilizo la propiedad display inline-block para colocar los elementos li en linea (uno al lado del otro) y poder aplicarles un margen o padding*/
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-menu-link {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: ease 1.5s;
+    position: relative;
+}
+
+/*Animacion links*/
+.nav-menu-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: all 0.4s;
+}
+
+.nav-menu-link:hover::before {
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+/*Estilos al footer */
+.footer {
+    height: 20vh;
+    background-color: #191919;
+}
+
+.footer-social-media {
+    height: 10vh;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.footer-copyright {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer .lista-items-social {
+    list-style: none;
+    height: 10vh;
+    padding: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-social:hover {
+    opacity: .7;
+}
+
+.footer li a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.footer-contacto {
+    text-align: left;
+    font-weight: bolder;
+}
+
+.footer hr {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+/*estilos seccion sobre mí*/
+.about-me{
+    padding-top: 100px;
+    width: 45%;
+    margin: auto;
+}
+.about-me-title{
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.about-me-text{
+    color: #191919;
+    font-size: 1.5vw;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 1rem;
+}
+.container-image{
+    width: 45%;
+    padding: 1rem;
+}
+.img-sobremi{
+    width:40vw;
+    height: 100%;
+    padding-top: 100px;
+    object-fit: cover;
+}
+/*Media query  seccion sobre mí*/
+@media  (max-width:780px) {
+    .container{
+       flex-direction: column;
+    }
+    .about-me{
+        padding-top: 155px;
+        width: 90%;
+    }
+    .about-me-title{
+        font-size: 2rem;
+    }
+    .about-me-text{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .img-sobremi{
+        padding: 0;
+        display: none;
+        width: 100%;
+    }
+    .footer-copyright,hr{
+        display: none;
+    }
+    .footer{
+        height: auto;
+    }
+}
+/*estilos seccion sobre mi*/

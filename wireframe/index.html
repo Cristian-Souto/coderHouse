@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .cabecera{
+      position: sticky;
+      top: 0;
+    }
+    nav {
+      background-color: black;
+      height: 80px;
+      display: flex;
+    }
+
+    .cabecera-links  {
+      background-color: #000;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+     li {
+      list-style: none;
+      padding-right: 12px;
+    }
+
+   nav ul li > a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 100;
+      transition: ease 1s;
+      position: relative;
+    }
+    a:hover{
+      color:#cece;
+      transition: ease 1s;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+  <title>Primer entregable</title>
+</head>
+
+<body>
+  <!--incio  del header-->
+  <header class="cabecera">
+    <nav>
+      <!--falta Logo con su respectivo link a-->
+      <img src="" alt="Logo">
+      <ul class="cabecera-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--fin  de header-->
+  <!-- seccion slider que contendra  imagenes o videos-->
+  <section>
+    <div>
+      <h2>titulo</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia mollitia necessitatibus totam error alias dolores
+        provident, inventore nihil? Est, itaque!</p>
+      <!--imagen -->
+      <img src="../images/image-1.jpg" alt="" class="hero-image">
+    </div>
+    
+  </section>
+  <!--Seccion sobre mí-->
+  <section id="sobre">
+    <!--encabezado h2-->
+    <h2>Sobre mí</h2>
+    <!--Parrafo que contendra informacion acerca de mi trabajo-->
+    <img src="../images/persona.jpg" alt="" width="250">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, odit vitae. Veniam, maiores non quo culpa debitis
+      impedit doloremque aperiam nihil facere cumque obcaecati temporibus ullam quae voluptatem id exercitationem quia
+      labore rerum enim minima aut illum vel suscipit? Nisi laborum vel, autem enim iste quas reprehenderit earum beatae
+      error voluptatibus eos illum, maiores aliquam voluptatum accusantium aliquid quo. Iste!
+    </p>
+  </section>
+  <!--Fin seccion sobre mí-->
+  <!--incio seccion portafolío-->
+  <section id="galeria">
+    <!--contendra imagenes de mis trabajos fotografícos -->
+    <h2>Mis trabajos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nulla perferendis. Cupiditate ipsum velit odio
+      quibusdam. Veritatis quos aliquam sit tenetur, facilis dignissimos eius? Tenetur corporis commodi quis placeat
+      modi.</p>
+    <img src="../images/image-1.jpg" alt="" width="300">
+  </section>
+  <!--fin seccion portafolío-->
+  <!--inicio seccion de contacto-->
+  <section id="contacto">
+    <!--Titulo con el nombre contacto-->
+    <h1>Contacto</h1>
+    <p>Nombre</p>
+    <!--input -->
+    <p>Apellido</p>
+    <!--input-->
+    <p>Email</p>
+    <!--input-->
+    <p>Asunto</p>
+    <!--un text area-->
+    <!--para mostrar la ubicacion -->
+    <iframe src="" frameborder="0"></iframe>
+    <button>Enviar</button>
+  </section>
+  <!--fin seccion contacto-->
+  <!--seccion footer-->
+  <footer>
+    <!--tendremos 3 iconos para redes sociales y otra con el contacto, direccion, telefono y email-->
+    <p>Copyright 2022</p>
+    <h3>Contacto</h3>
+    <ul>
+      <li><a href="#">Telefono</a></li>
+      <li><a href="#">Dirección</a></li>
+      <li><a href="#">Email</a></li>
+    </ul>
+    <h3>Seguime</h3>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
